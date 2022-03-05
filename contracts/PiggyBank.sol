@@ -22,7 +22,7 @@ contract PiggyBank {
     }
     
     function withdrawFunds(address payable _to, uint256 _amount) public onlyOwner {
-        //TODO: Add a modifier to allow only withdraws from the contract owner
+        //TODO: #2 Add a modifier to allow only withdraws from the contract owner
         _to.transfer(_amount);
 
     }
